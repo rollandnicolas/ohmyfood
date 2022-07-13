@@ -1,0 +1,11 @@
+{
+    "name": "ohmyfood",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "sass": "sass --watch ./scss:./css"
+    },
+    "dependencies": {
+        "sass": "^1.53.0"
+    }
+}
