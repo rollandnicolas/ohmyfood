@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: opx;
 }
@@ -241,3 +242,23 @@ footer h4 {
 }
 
 /*# sourceMappingURL=style.css.map */
+=======
+/* Error: expected "{".
+ *   ,
+ * 1 | &
+ *   |  ^
+ *   '
+ *   scss/_variables.scss 1:2  @import
+ *   scss/style.scss 1:9       root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 1 \2502  &\a   \2502   ^\a   \2575 \a   scss/_variables.scss 1:2  @import\a   scss/style.scss 1:9       root stylesheet';
+}
+>>>>>>> 14286506fafc239f099428a80c0cdc451e2c32df
