@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 body {
   margin: opx;
 }
@@ -153,12 +153,21 @@ main {
   position: absolute;
   bottom: 2rem;
   right: 2.3rem;
+  color: #353535;
 }
 
 .fas {
   position: absolute;
   bottom: 2rem;
   right: 2.3rem;
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  opacity: 0;
+}
+
+.fas:hover {
+  opacity: 1;
 }
 
 .restaurants_cards {
@@ -241,24 +250,17 @@ footer h4 {
   gap: 1rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*
 =======
-/* Error: expected "{".
- *   ,
- * 1 | &
- *   |  ^
- *   '
- *   scss/_variables.scss 1:2  @import
- *   scss/style.scss 1:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 1 \2502  &\a   \2502   ^\a   \2575 \a   scss/_variables.scss 1:2  @import\a   scss/style.scss 1:9       root stylesheet';
-}
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_layout.scss";
+@import "_home.scss";
+@import "_restaurant.scss";
+@import "_tablet.scss";
+@import "_desktop.scss";
 >>>>>>> 14286506fafc239f099428a80c0cdc451e2c32df
+
+*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 body {
     margin: opx;
 }
@@ -58,7 +58,7 @@ main {
     border-radius: 3rem;
     border: none;
     box-shadow: 2px 2px 2px 1.5px grey;
-    background-image: linear-gradient(#ff79da,#9356dc)
+    background-image: linear-gradient(#ff79da,#9356dc);
 }
 
 .explorateur_btn:hover {
@@ -165,6 +165,13 @@ main {
     position: absolute;
     bottom: 2rem;
     right: 2.3rem;
+    color: transparent;
+    background-image: linear-gradient(#ff79da,#9356dc);
+    background-clip: text;
+}
+
+.fas:hover {
+    opacity: 1;
 }
 
 .restaurants_cards {
@@ -251,7 +258,7 @@ footer h4 {
     gap: 1rem;
 }
 
- 
+ /*
 =======
 @import "_variables.scss";
 @import "_mixins.scss";
@@ -261,3 +268,5 @@ footer h4 {
 @import "_tablet.scss";
 @import "_desktop.scss";
 >>>>>>> 14286506fafc239f099428a80c0cdc451e2c32df
+
+*/
