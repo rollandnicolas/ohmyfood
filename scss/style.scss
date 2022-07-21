@@ -5,7 +5,7 @@ body {
 header {
     height: 4rem;
     text-align: center;
-    box-shadow: 0 0 0.5rem rgb(0, 0, 0);
+    box-shadow: 0 0 0.5rem #7e7e7e;
     position: relative;
 }
 
@@ -47,6 +47,7 @@ main {
         margin-top: 1.5rem;
     }
 }
+
 .explorateur_btn {
     width: 75%;
     color: white;
@@ -106,7 +107,6 @@ main {
     gap: 1rem;
 }
 
-
 .tuto .number {
     background-color: #9356dc;
     width: 1.8rem;
@@ -126,15 +126,12 @@ main {
     padding-top: 2rem;
     margin-top: 0px;
     
-    
-
     & h2 {
         font-weight: bold;
         font-size: 1.7rem;
         padding-left: 1.8rem;
         margin-top: 1.8rem;
-        margin-bottom: 1.8rem;
-     
+        margin-bottom: 1.8rem;   
 }
 }
 
@@ -155,6 +152,7 @@ main {
     font-size: 1.3rem;
 }
 
+
 .far {
     position: absolute;
     bottom: 2rem;
@@ -170,7 +168,7 @@ main {
     background-image: linear-gradient(#ff79da,#9356dc);
     background-clip: text;
     opacity: 0;
-    transition: all 2s;
+    transition: all 0.5s;
 }
 
 .fas:hover {
@@ -184,6 +182,7 @@ main {
     border-radius: 2.5rem;
     margin-bottom: 1.5rem; 
     position: relative;
+    cursor: pointer;
 }
 
 .restaurants_cards_img {
@@ -206,9 +205,9 @@ main {
 .restaurants_contenu h3 {
     font-size: 1.4rem;
     font-weight: bold;
-    
     color: black;
 }
+
 
 .restaurants_mention {
     align-items: center;
@@ -240,6 +239,7 @@ main {
     padding: 1.2rem;
     padding-left: 1.4rem;
     font-family: "Roboto";
+    
 }
 
 footer h4 {
@@ -247,18 +247,24 @@ footer h4 {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
 }
-
+   
 .cc {
     font-size: 1.2rem;
-    gap: 4rem;
+    list-style-type: none;
+    line-height: 2rem;
 }
-
 
 .decorationnone {
     text-decoration: none;
     color: white;
-    margin-bottom: 1rem;
-    gap: 1rem;
+}
+
+.space {
+    margin-right: 1rem;
+}
+
+.lienfooter {
+    margin-bottom: 1.5rem;
 }
 
 /* LOADER */@at-root
@@ -276,7 +282,6 @@ footer h4 {
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
-
 
 .loader:after {
     content: "";
@@ -301,7 +306,7 @@ footer h4 {
 }
 
 
-/* a la francaise */
+/* a la francaise ****************************************************/
 
 main {
     font-family: "Roboto";
@@ -311,41 +316,129 @@ main {
     width: 100%;
     height: 20rem;
     background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-
 }
 
 .menu_container {
     position: absolute;
-    height: 70rem;
+    height: 80rem;
     width: 100%;
     background-color: #f6f6f6;
     margin-top: -4rem;
-    padding-top: 2rem;
+    padding-top: 1.8rem;
     padding-left: 1.5rem;
     border-radius: 3rem 3rem 0 0;   
 }
 
-h2 {
-    font-family: "Shrikhand";
-}
-
 .resto_titreglob {
     display: flex;
-    text-align: center;
+    justify-content: space-between;
+
     font-family: "Shrikhand";
     font-size: 1.7rem;
+    & h2 {
+        font-family: "Shrikhand";    
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .menu_contenu {
-    width: 92%;
-    padding: 0.7rem;
+    width: 96%;
+    padding-right: 0px;
     background-color: #ffffff;
     margin-bottom: 1rem;
     border-radius: 1rem;
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
+    overflow: hidden;
+    
+    text-overflow: ellipsis;
+    wrap: nowrap;
 }
+
+    .menudescription {
+        padding: 0.7rem;
+   } 
+
+    &:hover { 
+        .check {
+        margin-right: 0;
+    }
+
+    i {
+        animation-name: checkspin;
+        animation-duration:  0.5s;
+    }
+}
+}
+
+.menu_miseenpage {
+    animation: apparitionmenu 1.5s ease-out;
+    animation-fill-mode: backwards;
+
+    
+}
+
+.delay1 {
+    animation-delay: 200ms;
+}
+
+.delay2 {
+    animation-delay: 600ms;
+}
+
+.delay3 {
+    animation-delay: 1s;
+}
+
+  
+@keyframes apparitionmenu {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.check {
+    background-color: #99e2d0;
+    color: #99e2d0;
+    width: 4rem;
+    padding: 0px;
+    margin-right: -4rem;
+    transition: margin-right 0.6s;
+    display: grid;
+    place-items: center;
+
+    i {
+        display: grid;
+        place-items: center;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+}    
+
+
+
+@keyframes checkspin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
 
 .lienresto {
     position: absolute;
@@ -359,21 +452,65 @@ h2 {
     font-size: 1.2rem;
     color: #7b7b7b;
     position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
 
     &::after {
         content: "";
         height: 0.25rem;
-        width: 2rem;
-        background-color: #008766;
+        width: 2.5rem;
+        background-color: #99e2d0;
         position: absolute;
-
+        bottom: -0.5rem;
+        left: 0;
     }
 }
+
+.h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
 .price {
-    margin-top: 0.8rem;
-    margin-right: 0rem;
+    font-weight: 1.1rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    padding-right: 1rem;
 }
 
+.price_check {
+    display: flex;
+    padding: 0px; 
+}
+
+
+
+.btn_command {
+    width: 45%;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    border: none;
+    box-shadow: 2px 2px 2px 1.5px grey;
+    background-image: linear-gradient(#ff79da,#9356dc);
+}
+
+.btn_command:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+.footerpb {
+    margin-top: 76rem;
+    z-index: 3;
+}
 
 
 
