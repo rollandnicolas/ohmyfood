@@ -1,4 +1,3 @@
-/*<<<<<<< HEAD*/
 body {
   margin: opx;
 }
@@ -83,6 +82,10 @@ main {
   text-align: center;
 }
 
+.bb3 {
+  background-color: #f5edff;
+}
+
 .tuto li {
   display: flex;
   width: 92%;
@@ -100,9 +103,6 @@ main {
   display: flex;
   position: absolute;
   gap: 1rem;
-}
-.bb bb3 {
-  background-color: #f5edff;
 }
 
 .tuto .number {
@@ -164,6 +164,7 @@ main {
   background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
   opacity: 0;
+  transition: all 2s;
 }
 
 .fas:hover {
@@ -250,17 +251,113 @@ footer h4 {
   gap: 1rem;
 }
 
-/*
-=======
-@import "_variables.scss";
-@import "_mixins.scss";
-@import "_layout.scss";
-@import "_home.scss";
-@import "_restaurant.scss";
-@import "_tablet.scss";
-@import "_desktop.scss";
->>>>>>> 14286506fafc239f099428a80c0cdc451e2c32df
+/* LOADER */
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  height: 100%;
+  background-color: whitesmoke;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disparitionflou 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
 
-*/
+.loader:after {
+  content: "";
+  height: 150px;
+  width: 150px;
+  border-radius: 5rem;
+  /* border: 8px solid #eaeaea;*/
+  border-top: 8px solid #9356dc;
+  border-bottom: 8px solid #ff79da;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes disparitionflou {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* a la francaise */
+main {
+  font-family: "Roboto";
+}
+
+.container_img_resto {
+  width: 100%;
+  height: 20rem;
+  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.menu_container {
+  position: absolute;
+  height: 70rem;
+  width: 100%;
+  background-color: #f6f6f6;
+  margin-top: -4rem;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  border-radius: 3rem 3rem 0 0;
+}
+
+h2 {
+  font-family: "Shrikhand";
+}
+
+.resto_titreglob {
+  display: flex;
+  text-align: center;
+  font-family: "Shrikhand";
+  font-size: 1.7rem;
+}
+
+.menu_contenu {
+  width: 92%;
+  padding: 0.7rem;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.lienresto {
+  position: absolute;
+  left: 1.5rem;
+  top: 1rem;
+  color: #101010;
+}
+
+.h3 {
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  color: #7b7b7b;
+  position: relative;
+}
+.h3::after {
+  content: "";
+  height: 0.25rem;
+  width: 2rem;
+  background-color: #008766;
+  position: absolute;
+}
+
+.price {
+  margin-top: 0.8rem;
+  margin-right: 0rem;
+}
 
 /*# sourceMappingURL=style.css.map */
