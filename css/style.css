@@ -1,240 +1,20 @@
 /*couleurs*/
-body {
-  margin: opx;
-}
-
-header {
-  height: 4rem;
-  text-align: center;
-  box-shadow: 0 0 0.5rem rgb(0, 0, 0);
-  position: relative;
-}
-
-.header_logo {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 2rem;
-  padding-top: 0.5rem;
-}
-
-main {
+* {
   font-family: "Roboto", sans-serif;
 }
 
-.localite {
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
-  background-color: #e3e1e1;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 0.3rem;
-  padding-top: 1rem;
-}
-
-.explorateur {
-  height: 23rem;
-  padding-top: 2.6rem;
-  text-align: center;
-  background-color: #eeeded;
-}
-.explorateur h2 {
-  font-weight: bold;
-  font-size: 2rem;
-}
-.explorateur p {
-  font-size: 1.4rem;
-  color: #5c5857;
-  margin-top: 1.5rem;
-}
-
-.explorateur_btn {
-  width: 60%;
-  color: white;
-  font-size: 1.3rem;
-  padding: 1rem;
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
-  margin-top: 3rem;
-  border-radius: 3rem;
-  border: none;
-  box-shadow: 2px 2px 2px 1.5px grey;
-  background-image: linear-gradient(#ff79da, #9356dc);
-}
-
-.explorateur_btn:hover {
-  transform: scale(1.03);
-}
-
-.tutoriel {
-  height: 38rem;
-  padding-top: 3.2rem;
-}
-.tutoriel h2 {
-  font-weight: bold;
-  font-size: 2rem;
-  padding-left: 1.8rem;
-  padding-bottom: 1.8rem;
-}
-
-.tuto li {
-  display: flex;
-  width: 90%;
-  padding: 1.8rem;
-  gap: 1.5rem;
-  font-size: 1.5rem;
-  background-color: #eeeded;
-  margin-bottom: 10px;
-  border: solid, 1px, black;
-  border-radius: 1rem;
-}
-
-.tuto .number {
-  background-color: blue;
-  width: 30px;
-  height: 30px;
-  color: white;
-  border-radius: 100%;
-}
-
-.localite {
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
-  background-color: #e3e1e1;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 0.3rem;
-  padding-top: 1rem;
-}
-
-.explorateur {
-  height: 23rem;
-  padding-top: 2.6rem;
-  text-align: center;
-  background-color: #eeeded;
-}
-.explorateur h2 {
-  font-weight: bold;
-  font-size: 2rem;
-}
-.explorateur p {
-  font-size: 1.4rem;
-  color: #5c5857;
-  margin-top: 1.5rem;
-}
-
-.explorateur_btn {
-  width: 60%;
-  color: white;
-  font-size: 1.3rem;
-  padding: 1rem;
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
-  margin-top: 3rem;
-  border-radius: 3rem;
-  border: none;
-  box-shadow: 2px 2px 2px 1.5px grey;
-  background-image: linear-gradient(#ff79da, #9356dc);
-}
-
-.explorateur_btn:hover {
-  transform: scale(1.03);
-}
-
-.tutoriel {
-  height: 38rem;
-  padding-top: 3.2rem;
-}
-.tutoriel h2 {
-  font-weight: bold;
-  font-size: 2rem;
-  padding-left: 1.8rem;
-  padding-bottom: 1.8rem;
-}
-
-.tuto li {
-  display: flex;
-  width: 90%;
-  padding: 1.8rem;
-  gap: 1.5rem;
-  font-size: 1.5rem;
-  background-color: #eeeded;
-  margin-bottom: 10px;
-  border: solid, 1px, black;
-  border-radius: 1rem;
-}
-
-.tuto .number {
-  background-color: blue;
-  width: 30px;
-  height: 30px;
-  color: white;
-  border-radius: 100%;
-}
-
-@media only screen and (min-width: 990px) {
-  .tuto li {
-    width: 30%;
-  }
-}
-@media only screen and (min-width: 990px) {
-  h2 {
-    margin-left: 3%;
-  }
-  .tutoriel {
-    height: 200px;
-  }
-  .tuto .test {
-    width: 28%;
-    margin-left: 3%;
-    margin: auto;
-    margin-top: 2rem;
-  }
-  .restaurants_container {
-    display: flex;
-    height: auto;
-    justify-content: space-between;
-    flex-direction: row;
-    /*flex-wrap: wrap;*/
-    width: 40%;
-  }
-  /*restos*/
-  .lienresto {
-    margin-left: 5%;
-  }
-  .container_img_resto {
-    width: 80%;
-  }
-  .menu_container {
-    margin: auto;
-  }
-  h2 {
-    margin: auto;
-  }
-  .entreeplatdessert {
-    display: flex;
-    margin-left: 1.5%;
-  }
-  .resp {
-    width: 28%;
-    margin-left: 2.8rem;
-  }
-}
 body {
-  margin: opx;
+  margin: 0px;
   height: 100%;
   width: 100%;
 }
 
+/* HEADER */
 header {
   height: 4rem;
   text-align: center;
   box-shadow: 1px 0 0.5rem #7e7e7e;
-  position: relative;
+  /* position: relative; */
 }
 
 .header_logo {
@@ -243,8 +23,39 @@ header {
   padding-top: 0.5rem;
 }
 
-main {
-  font-family: "Roboto", sans-serif;
+/* FOOTER */
+.footer {
+  width: 100%;
+  color: white;
+  background-color: #353535;
+  padding: 1.2rem;
+  padding-left: 1.4rem;
+  font-family: "Roboto";
+}
+
+footer h4 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.cc {
+  font-size: 1.2rem;
+  list-style-type: none;
+  line-height: 2rem;
+}
+
+.decorationnone {
+  text-decoration: none;
+  color: white;
+}
+
+.space {
+  margin-right: 1rem;
+}
+
+.lienfooter {
+  margin-bottom: 1.5rem;
 }
 
 .localite {
@@ -296,8 +107,7 @@ main {
 }
 
 .tutoriel {
-  height: 30rem;
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 .tutoriel h2 {
   font-weight: bold;
@@ -353,7 +163,6 @@ main {
 
 .restaurants {
   width: 100%;
-  height: 90rem;
   background-color: #f6f6f6;
   padding-top: 1rem;
   margin-top: 0px;
@@ -478,116 +287,28 @@ main {
   text-decoration: none;
 }
 
-/* FOOTER */
-.footer {
-  width: 100%;
-  height: 16rem;
-  color: white;
-  background-color: #353535;
-  padding: 1.2rem;
-  padding-left: 1.4rem;
-  font-family: "Roboto";
-}
-
-footer h4 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 1.4rem;
-  margin-bottom: 1.2rem;
-}
-
-.cc {
-  font-size: 1.2rem;
-  list-style-type: none;
-  line-height: 2rem;
-}
-
-.decorationnone {
-  text-decoration: none;
-  color: white;
-}
-
-.space {
-  margin-right: 1rem;
-}
-
-.lienfooter {
-  margin-bottom: 1.5rem;
-}
-
-/* LOADER */
-.loader {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  inset: 0;
-  height: 100%;
-  background-color: whitesmoke;
-  z-index: 1;
-  opacity: 0.9;
-  animation: disparitionflou 1s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-}
-
-.loader:after {
-  content: "";
-  height: 150px;
-  width: 150px;
-  border-radius: 5rem;
-  /* border: 8px solid #eaeaea;*/
-  border-top: 8px solid #9356dc;
-  border-bottom: 8px solid #ff79da;
-  animation: spin 2s infinite linear;
-}
-
-@keyframes disparitionflou {
-  from {
-    opacity: 0.9;
-  }
-  to {
-    opacity: 0;
-  }
-  0% {
-    width: 100%;
-    height: 100%;
-  }
-  99% {
-    width: 100%;
-    height: 100%;
-  }
-  100% {
-    width: 0;
-    height: 0;
-  }
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* a la francaise ****************************************************/
-main {
-  font-family: "Roboto";
-}
-
 .container_img_resto {
   width: 100%;
   height: 20rem;
-  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+}
+
+.container_img_resto img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
 }
 
 .menu_container {
-  position: absolute;
-  height: 80rem;
   width: 100%;
   background-color: #f6f6f6;
-  margin-top: -4rem;
-  padding-top: 1.8rem;
-  padding-left: 1.5rem;
+  margin-top: -60px;
   border-radius: 3rem 3rem 0 0;
 }
 
 .resto_titreglob {
+  position: relative;
   display: flex;
   justify-content: space-between;
   font-family: "Shrikhand";
@@ -595,6 +316,24 @@ main {
 }
 .resto_titreglob h2 {
   font-family: "Shrikhand";
+}
+
+.restaurants_heart {
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  background-color: skyblue;
+}
+
+.restaurants_heart .far {
+  position: static;
+}
+
+.coeur {
+  /* position: absolute; */
+  position: static;
 }
 
 .uppercase {
@@ -765,9 +504,125 @@ btn_note {
   bottom: 3rem;
 }
 
-.footerpb {
-  margin-top: 76rem;
-  z-index: 3;
+@media only screen and (min-width: 990px) {
+  .tuto li {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 990px) {
+  h2 {
+    margin-left: 3%;
+  }
+
+  .tuto li {
+    width: 28%;
+    margin-left: 3%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .restaurants_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .restaurants_cards {
+    width: 48%;
+    max-height: 340px;
+  }
+
+  .restaurants_cards img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  /* Pages restaurant */
+  .container_img_resto {
+    object-fit: cover;
+  }
+
+  .lienresto {
+    margin-left: 5%;
+  }
+
+  .menu_container {
+    margin: -60px auto 0 auto;
+  }
+
+  h2 {
+    margin: auto;
+  }
+
+  .entreeplatdessert {
+    display: flex;
+    margin-left: 1.5%;
+  }
+
+  .resp {
+    width: 28%;
+    margin-left: 2.8rem;
+  }
+}
+/* TODO 
+
+
+- couleur boutons du tuto au rollover
+
+*/
+/* LOADER */
+.loader {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  height: 100%;
+  background-color: whitesmoke;
+  z-index: 1;
+  opacity: 0.9;
+  animation: disparitionflou 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.loader:after {
+  content: "";
+  height: 150px;
+  width: 150px;
+  border-radius: 5rem;
+  /* border: 8px solid #eaeaea;*/
+  border-top: 8px solid #9356dc;
+  border-bottom: 8px solid #ff79da;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes disparitionflou {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  99% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

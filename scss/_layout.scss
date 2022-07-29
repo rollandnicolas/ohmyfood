@@ -1,11 +1,20 @@
-body {
-    margin: opx;
+* {
+    font-family: "Roboto", sans-serif;    
 }
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* HEADER */
+
 header {
     height: 4rem;
     text-align: center;
-    box-shadow: 0 0 0.5rem rgb(0, 0, 0);
-    position: relative;
+    box-shadow: $shadow;
+    /* position: relative; */
 }
 
 .header_logo {
@@ -14,84 +23,39 @@ header {
     padding-top: 0.5rem;
 }
 
-main {
-    font-family: "Roboto", sans-serif;
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    color: white;
+    background-color: $noir;
+    padding: 1.2rem;
+    padding-left: 1.4rem;
+    font-family: "Roboto";
+    
 }
 
-.localite {
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.2rem;
-    background-color: #e3e1e1;
-    text-align: center;
+footer h4 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+   
+.cc {
     font-size: 1.2rem;
-    padding: 0.3rem;
-    padding-top: 1rem;
+    list-style-type: none;
+    line-height: 2rem;
 }
 
-.explorateur {
-    height: 23rem;
-    padding-top: 2.6rem;
-    text-align: center;
-    background-color: #eeeded;
-    & h2 {
-        font-weight: bold;
-        font-size: 2rem;
-    }
-    & p {
-        font-size: 1.4rem;
-        color: #5c5857;
-        margin-top: 1.5rem;
-    }
-}
-.explorateur_btn {
-    width: 60%;
+.decorationnone {
+    text-decoration: none;
     color: white;
-    font-size: 1.3rem;
-    padding: 1rem;
-    padding-left: 1.7rem;
-    padding-right: 1.7rem;
-    margin-top: 3rem;
-    border-radius: 3rem;
-    border: none;
-    box-shadow: 2px 2px 2px 1.5px grey;
-    background-image: linear-gradient(#ff79da,#9356dc)
 }
 
-.explorateur_btn:hover {
-    transform: scale(1.03);
+.space {
+    margin-right: 1rem;
 }
 
-.tutoriel {
-    height: 38rem;
-    padding-top: 3.2rem;
-    
-    & h2 {
-        font-weight: bold;
-        font-size: 2rem;
-        padding-left: 1.8rem;
-        padding-bottom: 1.8rem;
-    }
-    
-}
-.tuto li {
-    display: flex;
-    width: 90%;
-    padding: 1.8rem;
-    gap: 1.5rem;
-    font-size: 1.5rem;
-    background-color: #eeeded;
-    margin-bottom: 10px;
-    border: solid, 1px, black;
-    border-radius: 1rem;
-}
-
-.tuto .number {
-    background-color: blue;
-    width: 30px;
-    height: 30px;
-    color: white;
-    border-radius: 100%;
+.lienfooter {
+    margin-bottom: 1.5rem;
 }

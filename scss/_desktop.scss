@@ -5,63 +5,63 @@
         margin-left: 3%;
     }
 
-    .tutoriel {
-    height: 200px;
+    .tuto li {
+        width: 28%;
+        margin-left: 3%;
+        margin: auto;
+        margin-top: 2rem;
     }
 
-    .tuto .test {
-    width: 28%;
-    margin-left: 3%;
-    margin: auto;
-    margin-top: 2rem;
-}
+    .restaurants_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .restaurants_cards {
+        width: 48%;
+        max-height: 340px;
+    }
+
+    .restaurants_cards img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+    }
 
 
-
-.restaurants_container {
-    display: flex;
-    height: auto;
-    justify-content: space-between;
-    flex-direction: row;
-    /*flex-wrap: wrap;*/
-    width: 40%;
-}
+    /* Pages restaurant */
 
 
+    .container_img_resto {
+        object-fit: cover;
+    }
 
+    .lienresto {
+        margin-left: 5%;
+    }
 
+    
+    .menu_container {
+        margin: -60px auto 0 auto;
+    }
 
+    h2 {
+        margin: auto;
+    }
 
+    .entreeplatdessert {
+        display: flex;
 
-/*restos*/
+        margin-left: 1.5%;
+    }
 
-.lienresto {
-    margin-left: 5%;
-}
-
-.container_img_resto {
-    width: 80%;
-
-}
-
-.menu_container {
-    margin: auto;
-}
-
-h2 {
-    margin: auto;
-}
-
-.entreeplatdessert {
-    display: flex;
-
-    margin-left: 1.5%;
-}
-
-.resp {
-    width: 28%;
-    margin-left: 2.8rem;
-}
+    .resp {
+        width: 28%;
+        margin-left: 2.8rem;
+    }
 
 
 }

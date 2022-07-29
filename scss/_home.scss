@@ -1,11 +1,10 @@
-
 .localite {
     height: 3.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1.2rem;
-    background-color: #e3e1e1;
+    background-color: $grisfonce;
     text-align: center;
     font-size: 1.2rem;
     padding: 0.3rem;
@@ -16,63 +15,224 @@
     height: 23rem;
     padding-top: 2.6rem;
     text-align: center;
-    background-color: #eeeded;
+    background-color: $grisclair;
     & h2 {
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     & p {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         color: #5c5857;
         margin-top: 1.5rem;
     }
 }
+
 .explorateur_btn {
-    width: 60%;
+    width: 75%;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 1rem;
     padding-left: 1.7rem;
     padding-right: 1.7rem;
     margin-top: 3rem;
     border-radius: 3rem;
     border: none;
-    box-shadow: 2px 2px 2px 1.5px grey;
-    background-image: linear-gradient(#ff79da,#9356dc)
+    box-shadow: 0px 3px 3px 1.5px grey;
+    @include degrade;
 }
 
 .explorateur_btn:hover {
     transform: scale(1.03);
+    cursor: pointer;
 }
 
 .tutoriel {
-    height: 38rem;
-    padding-top: 3.2rem;
+    padding: 3rem 0;
+    
     
     & h2 {
         font-weight: bold;
-        font-size: 2rem;
-        padding-left: 1.8rem;
+        font-size: 1.7rem;
+        padding-left: 2rem;
         padding-bottom: 1.8rem;
-    }
-    
 }
+}
+
+.tuto {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store {
+    color: $violet;
+}
+
+.tutoriel_text {
+    text-align: center;
+}
+
 .tuto li {
     display: flex;
-    width: 90%;
-    padding: 1.8rem;
-    gap: 1.5rem;
-    font-size: 1.5rem;
+    width: 92%;
+    margin-left: 6%;
+    padding: 1.7rem;
+    padding-left: 2rem;
+    margin-bottom: 7rem;
+    font-size: 1.2rem;
     background-color: #eeeded;
     margin-bottom: 10px;
-    border: solid, 1px, black;
-    border-radius: 1rem;
+    border-radius: 1.5rem;  
+}
+
+.bb {
+    display: flex;
+    position: absolute;
+    gap: 1rem;
 }
 
 .tuto .number {
-    background-color: blue;
-    width: 30px;
-    height: 30px;
+    background-color: $violet;
+    width: 1.8rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    font-size: 1rem;
     color: white;
     border-radius: 100%;
+    text-align: center;
+    position: relative;
+    left: -3rem;
 }
+
+
+
+
+.restaurants {
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-top: 1rem;
+    margin-top: 0px;
+    
+    & h2 {
+        font-weight: bold;
+        font-size: 1.7rem;
+        padding-left: 1.8rem;
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;   
+}
+}
+
+.restaurants_container {
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.restaurants_contenu {
+    position: relative;
+}
+
+.restaurants_contenu p {
+    color: #606060;
+    font-size: 1.3rem;
+}
+
+.menu_contenu {
+    box-shadow: $shadow;
+}
+
+.test {
+    box-shadow: $shadow;
+}
+
+.test3 {
+   /* background-color: $rose;
+*/}
+
+.restaurants_heart {
+    position: absolute;
+   bottom: 3.5rem;
+    right: 0rem;
+    padding-right: 2rem;
+}
+
+
+.restaurants_heart .far {
+    position: absolute;
+    bottom: -2rem;
+    right: 2.5rem;
+    color: $noir;
+}
+
+.restaurants_heart .fas {
+    position: absolute;
+    bottom: -2rem;
+    right: 2.5rem;
+    color: transparent;
+    background-image: linear-gradient($rose,$violet);
+    background-clip: text;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.fas:hover {
+    opacity: 1;
+}
+
+.restaurants_cards {
+    width: 92%;
+    height: 23%;
+    background-color: white;
+    border-radius: 2.5rem;
+    margin-bottom: 1.5rem; 
+    position: relative;
+    cursor: pointer;
+    box-shadow: $shadow;
+
+}
+
+.restaurants_cards_img {
+    height: 73%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.restaurants_cards_footer {
+    
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    padding-bottom: 1.2rem;
+    padding-top: 0.6rem;
+}
+
+.restaurants_contenu h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+}
+
+
+.restaurants_mention {
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 100px;
+    height: 10%;
+    padding-top: 0.3rem;
+    background-color: $vertclair;
+    color: $vert;
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+}
+
+.cardmention {
+    text-decoration: none;
+}
+

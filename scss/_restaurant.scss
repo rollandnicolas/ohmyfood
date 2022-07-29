@@ -1,0 +1,244 @@
+
+
+.container_img_resto {
+    width: 100%;
+    height: 20rem;
+    background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+}
+
+.container_img_resto img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+
+.menu_container {
+    width: 100%;
+    background-color: #f6f6f6;
+    margin-top: -60px;
+    border-radius: 3rem 3rem 0 0;   
+}
+
+.resto_titreglob {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Shrikhand";
+    font-size: 1.7rem;
+    & h2 {
+        font-family: "Shrikhand";    
+    }
+}
+
+.restaurants_heart {
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    background-color: skyblue;    
+}
+
+.restaurants_heart .far {
+    position: static;
+}
+
+.coeur {
+    /* position: absolute; */
+    position: static;
+}
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.menu_contenu {
+    width: 96%;
+    padding-right: 0px;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    overflow: hidden;
+    cursor: pointer;    
+}
+
+.menudescription {
+    padding: 0.7rem; 
+    padding-right: 1rem;   
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.h4 {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.h5 {
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.menu_contenu {
+    &:hover { 
+        .check {
+            margin-right: 0;
+        }
+
+        i {
+            animation-name: checkspin;
+            animation-duration:  0.5s;
+        }
+    }
+}
+
+
+.menu_miseenpage {
+    animation: apparitionmenu 1.5s ease-out;
+    animation-fill-mode: backwards;    
+}
+
+.delay1 {
+    animation-delay: 200ms;
+}
+
+.delay2 {
+    animation-delay: 600ms;
+}
+
+.delay3 {
+    animation-delay: 1s;
+}
+
+  
+@keyframes apparitionmenu {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.check {
+    background-color: #99e2d0;
+    color: #99e2d0;
+    width: 4rem;
+    padding: 0px;
+    margin-right: -4rem;
+    transition: margin-right 0.6s;
+    display: grid;
+    place-items: center;
+
+    i {
+        display: grid;
+        place-items: center;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+}    
+
+
+
+@keyframes checkspin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.lienresto {
+    position: absolute;
+    left: 1.5rem;
+    top: 1rem;
+    color: #101010;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.h3 {
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    color: #7b7b7b;
+    position: relative;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
+
+    &::after {
+        content: "";
+        height: 0.25rem;
+        width: 2.5rem;
+        background-color: #99e2d0;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+    }
+}
+
+.h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+.price {
+    font-weight: 1.1rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    padding-right: 1rem;
+}
+
+.price_check {
+    display: flex;
+    padding: 0px; 
+}
+
+
+
+.btn_command {
+    width: 45%;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    border: none;
+    box-shadow: 2px 2px 2px 1.5px grey;
+    /*background-image: linear-gradient(#ff79da,#9356dc);*/
+    @include degrade;
+
+
+    &:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+}
+
+btn_note {
+    position: absolute;
+    bottom: 3rem;
+}
+
+
+
+
