@@ -355,7 +355,7 @@ footer h4 {
 }
 
 
-/* a la francaise ****************************************************/
+/* RESTAURANTS ****************************************************/
 
 main {
     font-family: "Roboto";
@@ -388,6 +388,18 @@ main {
         font-family: "Shrikhand";    
     }
 }
+
+.restaurants_heart {
+    width: 10rem;
+    height: 10rem;
+    background-color: skyblue;
+    /*position: relative;*/
+}
+
+.coeur {
+    position: absolute;
+}
+
 
 .uppercase {
     text-transform: uppercase;
