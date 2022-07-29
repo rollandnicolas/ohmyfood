@@ -5,29 +5,63 @@
         margin-left: 3%;
     }
 
-    .tutoriel_container {
-    height: auto;
+    .tutoriel {
+    height: 200px;
     }
 
     .tuto .test {
-    background-color: salmon;
     width: 28%;
     margin-left: 3%;
     margin: auto;
     margin-top: 2rem;
 }
 
-.tuto {
-   /*flex-direction: row;*/
-}
+
 
 .restaurants_container {
     display: flex;
-    
+    height: auto;
+    justify-content: space-between;
+    flex-direction: row;
     /*flex-wrap: wrap;*/
-    width: 45%;
+    width: 40%;
+}
 
+
+
+
+
+
+
+/*restos*/
+
+.lienresto {
+    margin-left: 5%;
+}
+
+.container_img_resto {
+    width: 80%;
 
 }
+
+.menu_container {
+    margin: auto;
+}
+
+h2 {
+    margin: auto;
+}
+
+.entreeplatdessert {
+    display: flex;
+
+    margin-left: 1.5%;
+}
+
+.resp {
+    width: 28%;
+    margin-left: 2.8rem;
+}
+
 
 }

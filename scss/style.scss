@@ -8,11 +8,13 @@
 
 body {
     margin: opx;
+    height: 100%;
+    width: 100%;
 }
 header {
     height: 4rem;
     text-align: center;
-    box-shadow: 0 0 0.5rem #7e7e7e;
+    box-shadow: $shadow;
     position: relative;
 }
 
@@ -32,7 +34,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 1.2rem;
-    background-color: grey;
+    background-color: $grisfonce;
     text-align: center;
     font-size: 1.2rem;
     padding: 0.3rem;
@@ -43,7 +45,7 @@ main {
     height: 23rem;
     padding-top: 2.6rem;
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: $grisclair;
     & h2 {
         font-weight: bold;
         font-size: 1.7rem;
@@ -66,7 +68,7 @@ main {
     border-radius: 3rem;
     border: none;
     box-shadow: 0px 3px 3px 1.5px grey;
-    background-image: linear-gradient($rose,$violet);
+    @include degrade;
 }
 
 .explorateur_btn:hover {
@@ -92,12 +94,12 @@ main {
     flex-wrap: wrap;
 }
 
-.tutoriel_text {
-  text-align: center;
+.store {
+    color: $violet;
 }
 
-.bb3 {
-    background-color: white;
+.tutoriel_text {
+    text-align: center;
 }
 
 .tuto li {
@@ -120,7 +122,7 @@ main {
 }
 
 .tuto .number {
-    background-color: #9356dc;
+    background-color: $violet;
     width: 1.8rem;
     height: 1.8rem;
     line-height: 1.8rem;
@@ -132,7 +134,7 @@ main {
     left: -3rem;
 }
 
-#restaurants {
+.restaurants {
     width: 100%;
     height: 90rem;
     background-color: #f6f6f6;
@@ -164,6 +166,18 @@ main {
     color: #606060;
     font-size: 1.3rem;
 }
+
+.menu_contenu {
+    box-shadow: $shadow;
+}
+
+.test {
+    box-shadow: $shadow;
+}
+
+.test3 {
+   /* background-color: $rose;
+*/}
 
 .restaurants_heart {
     position: absolute;
@@ -203,6 +217,8 @@ main {
     margin-bottom: 1.5rem; 
     position: relative;
     cursor: pointer;
+    box-shadow: $shadow;
+
 }
 
 .restaurants_cards_img {
@@ -546,12 +562,19 @@ main {
     border-radius: 3rem;
     border: none;
     box-shadow: 2px 2px 2px 1.5px grey;
-    background-image: linear-gradient(#ff79da,#9356dc);
-}
+    /*background-image: linear-gradient(#ff79da,#9356dc);*/
+    @include degrade;
 
-.btn_command:hover {
+
+    &:hover {
     transform: scale(1.03);
     cursor: pointer;
+}
+}
+
+btn_note {
+    position: absolute;
+    bottom: 3rem;
 }
 
 

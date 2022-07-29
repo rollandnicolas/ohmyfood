@@ -185,33 +185,55 @@ main {
   h2 {
     margin-left: 3%;
   }
-  .tutoriel_container {
-    height: auto;
+  .tutoriel {
+    height: 200px;
   }
   .tuto .test {
-    background-color: salmon;
     width: 28%;
     margin-left: 3%;
     margin: auto;
     margin-top: 2rem;
   }
-  .tuto {
-    /*flex-direction: row;*/
-  }
   .restaurants_container {
     display: flex;
+    height: auto;
+    justify-content: space-between;
+    flex-direction: row;
     /*flex-wrap: wrap;*/
-    width: 45%;
+    width: 40%;
+  }
+  /*restos*/
+  .lienresto {
+    margin-left: 5%;
+  }
+  .container_img_resto {
+    width: 80%;
+  }
+  .menu_container {
+    margin: auto;
+  }
+  h2 {
+    margin: auto;
+  }
+  .entreeplatdessert {
+    display: flex;
+    margin-left: 1.5%;
+  }
+  .resp {
+    width: 28%;
+    margin-left: 2.8rem;
   }
 }
 body {
   margin: opx;
+  height: 100%;
+  width: 100%;
 }
 
 header {
   height: 4rem;
   text-align: center;
-  box-shadow: 0 0 0.5rem #7e7e7e;
+  box-shadow: 1px 0 0.5rem #7e7e7e;
   position: relative;
 }
 
@@ -231,7 +253,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-  background-color: grey;
+  background-color: #eaeaea;
   text-align: center;
   font-size: 1.2rem;
   padding: 0.3rem;
@@ -289,12 +311,12 @@ main {
   flex-wrap: wrap;
 }
 
-.tutoriel_text {
-  text-align: center;
+.store {
+  color: #9356dc;
 }
 
-.bb3 {
-  background-color: white;
+.tutoriel_text {
+  text-align: center;
 }
 
 .tuto li {
@@ -329,14 +351,14 @@ main {
   left: -3rem;
 }
 
-#restaurants {
+.restaurants {
   width: 100%;
   height: 90rem;
   background-color: #f6f6f6;
   padding-top: 1rem;
   margin-top: 0px;
 }
-#restaurants h2 {
+.restaurants h2 {
   font-weight: bold;
   font-size: 1.7rem;
   padding-left: 1.8rem;
@@ -359,6 +381,19 @@ main {
 .restaurants_contenu p {
   color: #606060;
   font-size: 1.3rem;
+}
+
+.menu_contenu {
+  box-shadow: 1px 0 0.5rem #7e7e7e;
+}
+
+.test {
+  box-shadow: 1px 0 0.5rem #7e7e7e;
+}
+
+.test3 {
+  /* background-color: $rose;
+  */
 }
 
 .restaurants_heart {
@@ -398,6 +433,7 @@ main {
   margin-bottom: 1.5rem;
   position: relative;
   cursor: pointer;
+  box-shadow: 1px 0 0.5rem #7e7e7e;
 }
 
 .restaurants_cards_img {
@@ -716,12 +752,17 @@ main {
   border-radius: 3rem;
   border: none;
   box-shadow: 2px 2px 2px 1.5px grey;
+  /*background-image: linear-gradient(#ff79da,#9356dc);*/
   background-image: linear-gradient(#ff79da, #9356dc);
 }
-
 .btn_command:hover {
   transform: scale(1.03);
   cursor: pointer;
+}
+
+btn_note {
+  position: absolute;
+  bottom: 3rem;
 }
 
 .footerpb {
