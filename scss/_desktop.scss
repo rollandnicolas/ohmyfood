@@ -1,7 +1,6 @@
 
 @media only screen and (min-width: 990px) 
 {
-
     .explorateur_container {
         max-width: 1600px;
         margin: 0 auto;
@@ -25,9 +24,7 @@
         margin: 0 auto;
     }   
 
-
     /* Pages restaurant */
-
 
     .container_img_resto {
         object-fit: cover;
@@ -37,7 +34,6 @@
         margin-left: 5%;
     }
 
-    
     .menu_container {
         margin: -60px auto 0 auto;
     }
@@ -55,12 +51,5 @@
 
     .restaurants_heart {
         margin-right: 5%;
-    }
-}
-
-@media only screen and (min-width: 1850px) 
-{
-    body {
-        margin: auto;
     }
 }

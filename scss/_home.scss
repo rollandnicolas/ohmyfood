@@ -24,7 +24,7 @@
     }
     & p {
         font-size: 1.1rem;
-        color: #5c5857;
+        color: $ecrituregris;
         margin-top: 1.5rem;
     }
 }
@@ -124,7 +124,7 @@
 
 .restaurants {
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: $grisclair;
     padding-top: 1rem;
     margin-top: 0px;
     
@@ -135,6 +135,10 @@
         margin-top: 1.8rem;
         margin-bottom: 1.8rem;   
 }
+}
+
+.h2 {
+    margin-left: 2.5%;
 }
 
 .restaurants_container {
@@ -231,7 +235,7 @@
 .restaurants_contenu h3 {
     font-size: 1.4rem;
     font-weight: bold;
-    color: black;
+    color: $noir;
 }
 
 

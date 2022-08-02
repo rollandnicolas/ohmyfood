@@ -1,5 +1,4 @@
 
-
 .container_img_resto1 {
     @include img_restos;
     background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
@@ -25,7 +24,6 @@
     height: 20rem;
     object-fit: cover;
 }
-
 
 .menu_container {
     width: 100%;
@@ -56,7 +54,6 @@
     top: 2.3rem;
     right: 3rem;
 }
-
 
 .restaurants_heart .far {
     position: absolute;
@@ -131,7 +128,6 @@
     }
 }
 
-
 .menu_miseenpage {
     animation: apparitionmenu 1.5s ease-out;
     animation-fill-mode: backwards;    
@@ -161,7 +157,6 @@
     }
 }
 
-
 .check {
     background-color: #99e2d0;
     color: #99e2d0;
@@ -181,8 +176,6 @@
     }
 }    
 
-
-
 @keyframes checkspin {
     from {
         transform: rotate(0deg);
@@ -191,9 +184,6 @@
         transform: rotate(360deg);
     }
 }
-
-
-
 
 .lienresto {
     position: absolute;

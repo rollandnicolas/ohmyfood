@@ -7,7 +7,6 @@ body {
   margin: 0px;
   height: 100%;
   width: 100%;
-  /* max-width: 1850px; */
 }
 
 /* HEADER */
@@ -15,7 +14,6 @@ header {
   height: 4rem;
   text-align: center;
   box-shadow: 1px 0 0.5rem #7e7e7e;
-  /* position: relative; */
 }
 
 .header_logo {
@@ -87,7 +85,7 @@ footer h4 {
 }
 .explorateur p {
   font-size: 1.1rem;
-  color: #5c5857;
+  color: #606060;
   margin-top: 1.5rem;
 }
 
@@ -191,6 +189,10 @@ footer h4 {
   margin-bottom: 1.8rem;
 }
 
+.h2 {
+  margin-left: 2.5%;
+}
+
 .restaurants_container {
   height: 92%;
   display: flex;
@@ -282,7 +284,7 @@ footer h4 {
 .restaurants_contenu h3 {
   font-size: 1.4rem;
   font-weight: bold;
-  color: black;
+  color: #353535;
 }
 
 /* Mention NOUVEAU */
@@ -567,13 +569,11 @@ btn_note {
     width: 100%;
     padding-bottom: 4rem;
   }
-
   .restaurants_cards {
     width: 44%;
     height: 310px;
     margin-bottom: 3rem;
   }
-
   .restaurants_cards img {
     width: 100%;
     max-height: 250px;
@@ -585,61 +585,41 @@ btn_note {
     max-width: 1600px;
     margin: 0 auto;
   }
-
   .tutoriel_container {
     max-width: 1600px;
     margin: 0 auto;
   }
-
   .tuto li {
     width: 28%;
     margin: auto;
     margin-top: 2rem;
   }
-
   .restaurants-container {
     max-width: 1600px;
     margin: 0 auto;
   }
-
   /* Pages restaurant */
   .container_img_resto {
     object-fit: cover;
   }
-
   .lienresto {
     margin-left: 5%;
   }
-
   .menu_container {
     margin: -60px auto 0 auto;
   }
-
   .entreeplatdessert {
     display: flex;
     margin-left: 1.5%;
   }
-
   .resp {
     width: 28%;
     margin-left: 2.8rem;
   }
-
   .restaurants_heart {
     margin-right: 5%;
   }
 }
-@media only screen and (min-width: 1850px) {
-  body {
-    margin: auto;
-  }
-}
-/* TODO 
-
-
-- couleur boutons du tuto au rollover
-
-*/
 /* LOADER */
 .loader {
   position: fixed;
@@ -660,7 +640,6 @@ btn_note {
   height: 150px;
   width: 150px;
   border-radius: 5rem;
-  /* border: 8px solid #eaeaea;*/
   border-top: 8px solid #9356dc;
   border-bottom: 8px solid #ff79da;
   animation: spin 2s infinite linear;
