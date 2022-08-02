@@ -7,7 +7,7 @@ body {
   margin: 0px;
   height: 100%;
   width: 100%;
-  max-width: 1850px;
+  /* max-width: 1850px; */
 }
 
 /* HEADER */
@@ -249,7 +249,7 @@ footer h4 {
 .restaurants_cards {
   width: 88%;
   height: 10%;
-  /*max-height: 340px;*/
+  height: 400px;
   background-color: white;
   border-radius: 2.5rem;
   margin-bottom: 2.5rem;
@@ -567,11 +567,13 @@ btn_note {
     width: 100%;
     padding-bottom: 4rem;
   }
+
   .restaurants_cards {
     width: 44%;
-    max-height: 340px;
+    height: 310px;
     margin-bottom: 3rem;
   }
+
   .restaurants_cards img {
     width: 100%;
     max-height: 250px;
@@ -579,29 +581,50 @@ btn_note {
   }
 }
 @media only screen and (min-width: 990px) {
+  .explorateur_container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .tutoriel_container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
   .tuto li {
     width: 28%;
     margin: auto;
     margin-top: 2rem;
   }
+
+  .restaurants-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
   /* Pages restaurant */
   .container_img_resto {
     object-fit: cover;
   }
+
   .lienresto {
     margin-left: 5%;
   }
+
   .menu_container {
     margin: -60px auto 0 auto;
   }
+
   .entreeplatdessert {
     display: flex;
     margin-left: 1.5%;
   }
+
   .resp {
     width: 28%;
     margin-left: 2.8rem;
   }
+
   .restaurants_heart {
     margin-right: 5%;
   }
