@@ -4,7 +4,11 @@
 
 OpenClassRoom Web Developer Path Project #3
 
-HTML / CSS / SASS integration project 
+**Stack : **
+
+ - HTML
+ - SASS
+ - Git
 
 **Author :** Nicolas Rolland
 
