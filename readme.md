@@ -16,6 +16,8 @@ https://rollandnicolas.github.io/ohmyfood/
 
 ```shell
 npm run sass
+http-server .
+# browse http://127.0.0.1:8080
 ```
 
 
