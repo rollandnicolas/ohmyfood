@@ -7,6 +7,7 @@ body {
   margin: 0px;
   height: 100%;
   width: 100%;
+  max-width: 1850px;
 }
 
 /* HEADER */
@@ -29,7 +30,8 @@ header {
   color: white;
   background-color: #353535;
   padding: 1.2rem;
-  padding-left: 1.4rem;
+  padding-left: 2.5rem;
+  padding-bottom: 3rem;
   font-family: "Roboto";
 }
 
@@ -69,6 +71,8 @@ footer h4 {
   font-size: 1.2rem;
   padding: 0.3rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 1px 0 0.5rem #7e7e7e;
 }
 
 .explorateur {
@@ -97,12 +101,13 @@ footer h4 {
   margin-top: 3rem;
   border-radius: 3rem;
   border: none;
-  box-shadow: 0px 3px 3px 1.5px grey;
+  box-shadow: 1px 0 0.5rem #7e7e7e;
   background-image: linear-gradient(#ff79da, #9356dc);
 }
 
 .explorateur_btn:hover {
-  transform: scale(1.03);
+  transform: scale(1.06);
+  transition: 300ms;
   cursor: pointer;
 }
 
@@ -121,25 +126,36 @@ footer h4 {
   flex-wrap: wrap;
 }
 
-.store {
-  color: #9356dc;
-}
-
 .tutoriel_text {
   text-align: center;
 }
 
 .tuto li {
   display: flex;
-  width: 92%;
-  margin-left: 6%;
-  padding: 1.7rem;
+  width: 88%;
+  margin-left: 8%;
+  padding: 1.5rem;
   padding-left: 2rem;
-  margin-bottom: 7rem;
   font-size: 1.2rem;
-  background-color: #eeeded;
-  margin-bottom: 10px;
+  background-color: #f6f6f6;
   border-radius: 1.5rem;
+  box-shadow: 1px 0 0.5rem #7e7e7e;
+}
+.tuto li:hover {
+  cursor: pointer;
+  background-color: #f5edff;
+  transform: scale(1.04);
+  transition: 300ms;
+}
+.tuto li:hover .i_tuto {
+  color: #9356dc;
+}
+.tuto li .i_tuto :hover {
+  color: #9356dc;
+}
+
+.interv {
+  margin-bottom: 1.5rem;
 }
 
 .bb {
@@ -200,32 +216,28 @@ footer h4 {
   box-shadow: 1px 0 0.5rem #7e7e7e;
 }
 
-.test3 {
-  /* background-color: $rose;
-  */
-}
-
-.restaurants_heart {
+.index_heart {
   position: absolute;
-  bottom: 3.5rem;
+  bottom: 0rem;
   right: 0rem;
   padding-right: 2rem;
 }
 
-.restaurants_heart .far {
+.index_heart .far {
   position: absolute;
-  bottom: -2rem;
-  right: 2.5rem;
+  bottom: 2rem;
+  right: 1.5rem;
   color: #353535;
 }
 
-.restaurants_heart .fas {
+.index_heart .fas {
   position: absolute;
-  bottom: -2rem;
-  right: 2.5rem;
+  bottom: 2rem;
+  right: 1.5rem;
   color: transparent;
   background-image: linear-gradient(#ff79da, #9356dc);
   background-clip: text;
+  -webkit-background-clip: text;
   opacity: 0;
   transition: all 0.4s;
 }
@@ -235,31 +247,36 @@ footer h4 {
 }
 
 .restaurants_cards {
-  width: 92%;
-  height: 23%;
+  width: 88%;
+  height: 10%;
+  /*max-height: 340px;*/
   background-color: white;
   border-radius: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   position: relative;
+  object-fit: cover;
   cursor: pointer;
   box-shadow: 1px 0 0.5rem #7e7e7e;
+  text-decoration: none;
+}
+.restaurants_cards:hover {
+  transform: scale(1.04);
+  transition: 400ms;
+}
+
+.restaurants_cards_textensemble {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-bottom: 1.2rem;
+  padding-top: 0.6rem;
 }
 
 .restaurants_cards_img {
   height: 73%;
   width: 100%;
   background-size: cover;
-  border-radius: 20px 20px 0 0;
   object-fit: cover;
-}
-
-.restaurants_cards_footer {
-  /*display: flex;*/
-  /*justify-content: space-between;*/
-  padding-left: 1.8rem;
-  padding-right: 1.8rem;
-  padding-bottom: 1.2rem;
-  padding-top: 0.6rem;
+  border-radius: 20px 20px 0 0;
 }
 
 .restaurants_contenu h3 {
@@ -268,6 +285,7 @@ footer h4 {
   color: black;
 }
 
+/* Mention NOUVEAU */
 .restaurants_mention {
   align-items: center;
   text-align: center;
@@ -283,15 +301,32 @@ footer h4 {
   right: 0.8rem;
 }
 
-.cardmention {
-  text-decoration: none;
-}
-
-.container_img_resto {
+.container_img_resto1 {
   width: 100%;
   height: 20rem;
-  background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
+  background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.container_img_resto2 {
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  background-image: url("/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.container_img_resto3 {
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.container_img_resto4 {
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+  background-image: url("/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .container_img_resto img {
@@ -305,6 +340,7 @@ footer h4 {
   background-color: #f6f6f6;
   margin-top: -60px;
   border-radius: 3rem 3rem 0 0;
+  padding-bottom: 4rem;
 }
 
 .resto_titreglob {
@@ -316,35 +352,52 @@ footer h4 {
 }
 .resto_titreglob h2 {
   font-family: "Shrikhand";
+  margin-left: 8%;
+  margin-top: 2rem;
 }
 
 .restaurants_heart {
-  right: 10px;
-  top: 0;
-  bottom: 0;
-  width: 60px;
-  height: 60px;
-  background-color: skyblue;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 2.3rem;
+  right: 3rem;
 }
 
 .restaurants_heart .far {
-  position: static;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #353535;
 }
 
-.coeur {
-  /* position: absolute; */
-  position: static;
+.restaurants_heart .fas {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: transparent;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.fas:hover {
+  opacity: 1;
 }
 
 .uppercase {
   text-transform: uppercase;
+  margin-left: 4%;
 }
 
 .menu_contenu {
-  width: 96%;
+  width: 90%;
   padding-right: 0px;
   background-color: #ffffff;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 5%;
   border-radius: 1rem;
   display: flex;
   justify-content: space-between;
@@ -436,7 +489,7 @@ footer h4 {
   position: absolute;
   left: 1.5rem;
   top: 1rem;
-  color: #101010;
+  color: black;
 }
 .lienresto:hover {
   transform: scale(1.2);
@@ -449,6 +502,7 @@ footer h4 {
   position: relative;
   margin-bottom: 2rem;
   margin-top: 2.5rem;
+  margin-left: 6%;
 }
 .h3::after {
   content: "";
@@ -490,12 +544,12 @@ footer h4 {
   margin-top: 4rem;
   border-radius: 3rem;
   border: none;
-  box-shadow: 2px 2px 2px 1.5px grey;
-  /*background-image: linear-gradient(#ff79da,#9356dc);*/
+  box-shadow: 1px 0 0.5rem #7e7e7e;
   background-image: linear-gradient(#ff79da, #9356dc);
 }
 .btn_command:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  transition: 350ms;
   cursor: pointer;
 }
 
@@ -504,67 +558,57 @@ btn_note {
   bottom: 3rem;
 }
 
-@media only screen and (min-width: 990px) {
-  .tuto li {
-    width: 30%;
-  }
-}
-@media only screen and (min-width: 990px) {
-  h2 {
-    margin-left: 3%;
-  }
-
-  .tuto li {
-    width: 28%;
-    margin-left: 3%;
-    margin: auto;
-    margin-top: 2rem;
-  }
-
+@media only screen and (min-width: 720px) {
   .restaurants_container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    padding-bottom: 4rem;
   }
-
   .restaurants_cards {
-    width: 48%;
+    width: 44%;
     max-height: 340px;
+    margin-bottom: 3rem;
   }
-
   .restaurants_cards img {
     width: 100%;
     max-height: 250px;
     object-fit: cover;
   }
-
+}
+@media only screen and (min-width: 990px) {
+  .tuto li {
+    width: 28%;
+    margin: auto;
+    margin-top: 2rem;
+  }
   /* Pages restaurant */
   .container_img_resto {
     object-fit: cover;
   }
-
   .lienresto {
     margin-left: 5%;
   }
-
   .menu_container {
     margin: -60px auto 0 auto;
   }
-
-  h2 {
-    margin: auto;
-  }
-
   .entreeplatdessert {
     display: flex;
     margin-left: 1.5%;
   }
-
   .resp {
     width: 28%;
     margin-left: 2.8rem;
+  }
+  .restaurants_heart {
+    margin-right: 5%;
+  }
+}
+@media only screen and (min-width: 1850px) {
+  body {
+    margin: auto;
   }
 }
 /* TODO 

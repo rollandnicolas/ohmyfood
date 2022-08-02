@@ -1,35 +1,14 @@
 
 @media only screen and (min-width: 990px) 
 {
-    h2 {
-        margin-left: 3%;
-    }
 
     .tuto li {
         width: 28%;
-        margin-left: 3%;
+       
         margin: auto;
         margin-top: 2rem;
     }
 
-    .restaurants_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;        
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .restaurants_cards {
-        width: 48%;
-        max-height: 340px;
-    }
-
-    .restaurants_cards img {
-        width: 100%;
-        max-height: 250px;
-        object-fit: cover;
-    }
 
 
     /* Pages restaurant */
@@ -48,10 +27,6 @@
         margin: -60px auto 0 auto;
     }
 
-    h2 {
-        margin: auto;
-    }
-
     .entreeplatdessert {
         display: flex;
 
@@ -63,5 +38,14 @@
         margin-left: 2.8rem;
     }
 
+    .restaurants_heart {
+        margin-right: 5%;
+    }
+}
 
+@media only screen and (min-width: 1850px) 
+{
+    body {
+        margin: auto;
+    }
 }
