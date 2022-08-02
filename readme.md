@@ -4,7 +4,7 @@
 
 OpenClassRoom Web Developer Path Project #3
 
-**Stack : **
+**Stack :**
 
  - HTML
  - SASS
