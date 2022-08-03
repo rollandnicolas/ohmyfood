@@ -7,3 +7,8 @@
     height: 20rem;
     background-size: cover;
 }
+
+@mixin respdesk {
+    max-width: 1600px;
+    margin: 0 auto;
+}

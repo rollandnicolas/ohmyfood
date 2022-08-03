@@ -2,13 +2,11 @@
 @media only screen and (min-width: 990px) 
 {
     .explorateur_container {
-        max-width: 1600px;
-        margin: 0 auto;
+        @include respdesk;
     }
 
     .tutoriel_container {
-        max-width: 1600px;
-        margin: 0 auto;
+        @include respdesk;
     }
 
     .tuto li {
@@ -20,8 +18,7 @@
 
 
     .restaurants-container {
-        max-width: 1600px;
-        margin: 0 auto;
+        @include respdesk;
     }   
 
     /* Pages restaurant */
@@ -54,7 +51,18 @@
     }
 
     .footer_container {
-        max-width: 1600px;
-        margin: 0 auto;
+        @include respdesk;
     }
+
+    /* pages restos */
+
+    .menu_container1 {
+        @include respdesk;
+
+    }
+
+    .footer_restos {
+        @include respdesk;
+    }
+
 }
