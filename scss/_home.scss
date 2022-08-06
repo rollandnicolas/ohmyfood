@@ -40,13 +40,16 @@
     border-radius: 3rem;
     border: none;
     box-shadow: $shadow;
+    transition: box-shadow 0.3s ease-out;
     @include degrade;
-}
 
-.explorateur_btn:hover {
+
+&.explorateur_btn:hover {
     transform: scale(1.06);
     transition: 300ms;
     cursor: pointer;
+    @include shadowbutton;
+}
 }
 
 .tutoriel {

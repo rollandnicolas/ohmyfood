@@ -245,12 +245,14 @@
     border-radius: 3rem;
     border: none;
     box-shadow: $shadow;
+    transition: box-shadow 0.3s ease-out;
     @include degrade;
 
     &:hover {
     transform: scale(1.05);
     transition: 350ms;
     cursor: pointer;
+    @include shadowbutton;
 }
 }
 

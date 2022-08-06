@@ -13,7 +13,7 @@ body {
 header {
   height: 4rem;
   text-align: center;
-  box-shadow: 1px 0 0.5rem #7e7e7e;
+  box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
 }
 
 .header_logo {
@@ -70,7 +70,7 @@ footer h4 {
   padding: 0.3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  box-shadow: 1px 0 0.5rem #7e7e7e;
+  box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
 }
 
 .explorateur {
@@ -99,14 +99,16 @@ footer h4 {
   margin-top: 3rem;
   border-radius: 3rem;
   border: none;
-  box-shadow: 1px 0 0.5rem #7e7e7e;
+  box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
+  transition: box-shadow 0.3s ease-out;
   background-image: linear-gradient(#ff79da, #9356dc);
 }
-
-.explorateur_btn:hover {
+.explorateur_btn.explorateur_btn:hover {
   transform: scale(1.06);
   transition: 300ms;
   cursor: pointer;
+  opacity: 0.8;
+  box-shadow: 0 0 12px rgba(18, 18, 18, 0.8);
 }
 
 .tutoriel {
@@ -137,7 +139,7 @@ footer h4 {
   font-size: 1.2rem;
   background-color: #f6f6f6;
   border-radius: 1.5rem;
-  box-shadow: 1px 0 0.5rem #7e7e7e;
+  box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
 }
 .tuto li:hover {
   cursor: pointer;
@@ -211,11 +213,11 @@ footer h4 {
 }
 
 .menu_contenu {
-  box-shadow: 1px 0 0.5rem #7e7e7e;
+  box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
 }
 
 .test {
-  box-shadow: 1px 0 0.5rem #7e7e7e;
+  box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
 }
 
 .index_heart {
@@ -258,7 +260,7 @@ footer h4 {
   position: relative;
   object-fit: cover;
   cursor: pointer;
-  box-shadow: 1px 0 0.5rem #7e7e7e;
+  box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
   text-decoration: none;
 }
 .restaurants_cards:hover {
@@ -546,13 +548,16 @@ footer h4 {
   margin-top: 4rem;
   border-radius: 3rem;
   border: none;
-  box-shadow: 1px 0 0.5rem #7e7e7e;
+  box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
+  transition: box-shadow 0.3s ease-out;
   background-image: linear-gradient(#ff79da, #9356dc);
 }
 .btn_command:hover {
   transform: scale(1.05);
   transition: 350ms;
   cursor: pointer;
+  opacity: 0.8;
+  box-shadow: 0 0 12px rgba(18, 18, 18, 0.8);
 }
 
 btn_note {
