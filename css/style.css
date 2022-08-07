@@ -73,6 +73,14 @@ footer h4 {
   box-shadow: 0 0 8px rgba(18, 18, 18, 0.5);
 }
 
+.bordurenone {
+  border: none;
+  background-color: #eaeaea;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  width: 8.8rem;
+}
+
 .explorateur {
   height: 23rem;
   padding-top: 2.6rem;

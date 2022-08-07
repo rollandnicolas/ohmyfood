@@ -13,6 +13,15 @@
     box-shadow: $shadow;
 }
 
+.bordurenone {
+    border: none;
+    background-color: $grisfonce;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    width: 8.8rem;
+}
+
+
 .explorateur {
     height: 23rem;
     padding-top: 2.6rem;
